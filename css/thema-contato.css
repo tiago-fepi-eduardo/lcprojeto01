@@ -1,0 +1,124 @@
+/* CONTATO */
+
+.contact-me-area {
+    padding: 70px 0px;
+    background-color: #f9f9f9;
+}
+
+/* FORMATACAO CAMPO INSERCAO */
+
+.form-group {
+    margin-bottom: 15px;
+    padding: 0 10px;
+    position: relative;
+}
+
+input[type="text"], 
+input[type="email"], 
+select {
+    border: 1px solid #ccc;
+    height: 55px;
+    line-height: 35px;
+    padding: 10px 25px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+
+textarea {
+    border: 1px solid #ccc;
+    height: 182px;
+    padding: 25px;
+    resize: none;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+     border: 1px solid #000 !important;
+}
+
+/* FORMATACAO BOTAO */
+
+.submit-btn-style {
+    background: #000 none repeat scroll 0 0;
+    border: 2px solid transparent;
+    color: #fff;
+    font-size: 15px;
+    line-height: 26px;
+    padding: 10px 23px;
+    position: relative;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.submit-btn-style:hover {
+    background: transparent;
+    border-color: #000;
+    color: #000;
+}
+
+/* INFORMACOES DE CONTATO */ 
+/* TEXTO */
+.single-contact-desc {
+    display: inline-block;
+    margin-left: 8px;
+    position: relative;
+    top: 30px;
+}
+
+.single-contact-desc > p {
+    color: #333;
+    font-size: 16px;
+    margin: 0;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+/* CAIXA COM FUNDO */
+
+.single-contact-address {
+    background: #fff none repeat scroll 0 0;
+    height: 120px;
+    text-align: center;
+    padding: 5px;
+    transition: all 0.5s ease 0s;
+    margin-bottom: 15px;
+}
+
+.single-contact-address:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ICON */
+
+.single-contact-icon {
+    display: inline-block;
+    position: relative;
+}
+
+.single-contact-icon {
+    border: 1px solid #000;
+    border-radius: 5%;
+    color: #000;
+    font-size: 22px;
+    height: 52px;
+    line-height: 50px;
+    padding: 0;
+    right: 0;
+    text-align: center;
+    top: 22px;
+    transition: all 500ms ease 0s;
+    width: 52px;
+}
+
+/* APLICA HOVER NO ICONE AO TOCAR A CAIXA */ 
+
+.single-contact-address:hover .single-contact-icon {
+    background: #000 none repeat scroll 0 0;
+    color: #fff;
+}
