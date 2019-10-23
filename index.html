@@ -10,19 +10,20 @@
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-    <!--Resource-->
-    <script src="resource/resource.js"></script>
-
     <!--Personal CSS-->
     <link href="css/thema-base.css" rel="stylesheet" type="text/css">
+    <link href="css/thema-menu.css" rel="stylesheet" type="text/css">
+    <link href="css/thema-welcome.css" rel="stylesheet" type="text/css">
     <link href="css/thema-contato.css" rel="stylesheet" type="text/css">
-
+    <link href="css/thema-rodape.css" rel="stylesheet" type="text/css">
+    
     <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--Bootstrap-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     <!--Personal Scripts-->
+    <script src="script/script-menu.js"></script>
     <script src="script/script-contato.js"></script>
 
     <!--Fontes-->
@@ -30,6 +31,74 @@
 </head>
 <body>
     
+    <header id="home" class="welcome-area">
+        <div class="header-top-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <!-- START LOGO DESIGN AREA -->
+                        <div class="logo">
+                            <a href="index.html">About Me</a>
+                        </div>
+                        <!-- END LOGO DESIGN AREA -->
+                    </div>
+                    <div class="col-md-9">
+                        <!-- START MENU DESIGN AREA -->
+                        <div class="mainmenu">
+                            <div class="navbar navbar-nobg">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="active"><a id="json-inicio" class="smoth-scroll" href="#home">Home <div class="ripple-wrapper"></div></a></li>
+                                        <li><a id="json-sobre" class="smoth-scroll" href="#about">About</a></li>
+                                        <li><a id="json-experiencia" class="smoth-scroll" href="#experiences">Experiences</a></li>
+                                        <li><a id="json-educacao" class="smoth-scroll" href="#education">Education</a></li>
+                                        <li><a id="json-servico" class="smoth-scroll" href="#services">Services</a></li>
+                                        <li><a id="json-portfolio" class="smoth-scroll" href="#portfolio">Portfolio</a></li>
+                                        <li><a id="json-blog" class="smoth-scroll" href="#blog">Blog</a></li>
+                                        <li><a id="json-contato" class="smoth-scroll" href="#contato">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END MENU DESIGN AREA -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome-image-area">
+            <div class="display-table">
+                <div class="display-table-cell">
+                    <div class="container">                        
+                        <div class="row">
+                            <!-- START HEADER TEXT AREA -->
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="header-text-area">
+                                    <h2>Welcome to my kingdom!</h2>
+                                    <p>It's the best way to promote your portfolio with this amazing template.</p>
+                                    <div class="header-button">
+                                        <a href="#" class="app-store-button wow bounceIn" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: bounceIn;"><i class="fa fa-download"></i>DOWNLOAD CV</a>
+                                        <a href="#contact" class="app-store-button wow bounceIn" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceIn;"><i class="fa fa-comments"></i>CONTACT ME</a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!-- / END HEADER TEXT AREA -->             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
     <section id="contato" class="contact-me-area section-padding">
         <div class="container">
             <div class="row">
@@ -120,6 +189,26 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center wow fadeInUp" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeInUp;">
+                        <div class="col-md-12 col-sm-11 col-xs-12">
+                            <span class="right-reserved">© 2017 About Me. All Right Reserved.</span>
+                            <div class="social">
+                                <a href="#" title=""><i class="fa fa-user-circle"></i></a>
+                                <a href="#" title=""><i class="fa fa-comment"></i></a>
+                                <a href="#" title=""><i class="fa fa-user-plus"></i></a>
+                                <a href="#" title=""><i class="fa fa-camera"></i></a>
+                                <a href="#" title=""><i class="fa fa-image"></i></a>
+                            </div>
+                        </div>
+                        <!-- / END OF SOCIAL MEDIA AREA -->
+                    </div>
+                </div>
+            </div>
+    </footer>
 
 </body>
 </html>

@@ -5,22 +5,23 @@ $(document).ready(function(){
     $('#btsubmit').click(function() {
        Salvar();
     });
-  });
+});
 
 function SetTitulo()
 {
-    obj = JSON.parse(titulos);
-    document.getElementById("json-titulo-contato").innerHTML = obj.titulos[1].contato;
+    $.getJSON("resource/resource.json", function(data)
+    {
+        document.getElementById("json-titulo-contato").innerHTML = data.titulos[1].contato;
 
-    obj = JSON.parse(contato);
-    document.getElementById("json-endereco1").innerHTML = obj.endereco[0].local1;
-    document.getElementById("json-endereco2").innerHTML = obj.endereco[0].local2;
+        document.getElementById("json-endereco1").innerHTML = data.endereco[0].local1;
+        document.getElementById("json-endereco2").innerHTML = data.endereco[0].local2;
 
-    document.getElementById("json-email1").innerHTML = obj.endereco[1].email1;
-    document.getElementById("json-email2").innerHTML = obj.endereco[2].email2;
+        document.getElementById("json-email1").innerHTML = data.endereco[1].email1;
+        document.getElementById("json-email2").innerHTML = data.endereco[2].email2;
 
-    document.getElementById("json-telefone1").innerHTML = obj.endereco[3].telefone1;
-    document.getElementById("json-telefone2").innerHTML = obj.endereco[4].telefone2;
+        document.getElementById("json-telefone1").innerHTML = data.endereco[3].telefone1;
+        document.getElementById("json-telefone2").innerHTML = data.endereco[4].telefone2;
+    });
 }
 
 function Salvar(){
